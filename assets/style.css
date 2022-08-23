@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(31, 20, 26);
+}
+:root {
+    --cor-fundo : rgb(48, 25, 53);
+    --cor-hover : rgb(31, 20, 26);
+    --cor-primaria : white;
+}
+nav {
+    position: sticky;
+    top: 0 auto;
+}
+.drop-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.drop-menu ul {
+    background-color: var(--cor-fundo);
+}
+.drop-menu ul li {
+    display: inline;
+    position: relative;
+}
+.drop-menu ul li a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px;
+    transition: backgound .1s;
+}
+.drop-menu ul li a:hover {
+    background-color: var(--cor-hover);
+}
+/* --sub menu-- */
+.drop-menu ul ul {
+    display: none;
+    position: absolute;
+    left: 0;
+}
+.drop-menu ul li:hover ul {
+    display: block;
+}
+.drop-menu ul ul {
+    width: 150px;
+}
+.drop-menu ul ul li a {
+    display: block;
+}
